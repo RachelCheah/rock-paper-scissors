@@ -4,7 +4,7 @@
 
 This is my first attempt at a project with frontend language. Hence, my takeaways for this project is from a complete beginner's perspective.
 #### What I've Learnt
-1. Animating with only CSS
+1. Animating with only CSS and JavaScript
 2. Priorities of CSS attributes
 3. Changing Contents of the Page through JavaScript
 4. Delaying functions in JavaScript
