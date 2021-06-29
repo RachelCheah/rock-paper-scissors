@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet" type="text/css">
+  <script src="rps.js" async></script>
+  <title>Rock Paper Scissors</title>
+
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <hr>
+  <h2>Who will Emerge Victorious?</h2>
+
+  <div class="animation">
+    <div class="selection inner">
+      <figure id="rock-section" class="image-selection">
+        <div class="rps-button" id="rock"><input type="submit" value="" id="rock-button"></div>
+        <figcaption>ROCK</figcaption>
+      </figure>
+
+      <figure id="paper-section" class="image-selection">
+        <div class="rps-button" id="paper"><input type="submit" value="" id="paper-button"></div>
+        <figcaption>PAPER</figcaption>
+      </figure>
+
+      <figure id="scissors-section" class="image-selection">
+        <div class="rps-button" id="scissors"><input type="submit" value="" id="scissors-button"></div>
+        <figcaption>SCISSORS</figcaption>
+      </figure>
+    </div>
+
+    <div class="loading hide inner">
+      <img class="loading-rock" id="left-rock" src="images/rock-image.png">
+      <img class="loading-rock" id="right-rock" src="images/rock-image.png">
+    </div>
+
+    <div class="result hide inner">
+      <img class="result-image left-result" id="left-result">
+      <img class="result-image right-result" id="right-result">
+    </div>
+
+    <div class="result-text inner">
+      <p class="hide" id="result-text">You Win!</p>
+    </div>
+</div>
+
+  <div class="score-system alt-color">
+    <div class="score-tracker" id="player-score">
+      <p class="score-text">Player Score:</p>
+      <div class="score"><p id="player-score-text">0</p></div>
+    </div>
+    
+    <div class="score-tracker" id="computer-score">
+      <p class="score-text">AI Score:</p>
+      <div class="score"><p id="computer-score-text">0</p></div>
+    </div>
+  </div>
+  <script>
+
+
+  </script>
+</body>
+</html>

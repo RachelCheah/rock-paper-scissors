@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner {
+    position: absolute;
+}
+
+.loading-rock {
+    width: 250px;
+    height: 250px;
+    filter: brightness(140%) drop-shadow(5px 5px 4px rgb(102, 102, 102));
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+@keyframes mover-left {
+    0% { transform: scaleX(-1) translateY(0); }
+    100% { transform: scaleX(-1) translateY(-20px); }
+}
+
+#result-text {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 80px;
+    margin-top: 40px;
+    text-shadow: 3px 3px #5a5a5a; 
+    white-space: pre-line;
+}
+
+
+#left-rock {
+    animation: mover-left 0.25s infinite  alternate;
+}
+
+#right-rock {
+    animation: mover 0.25s infinite  alternate;
+}
+
+.result-image {
+    width: 250px;
+    height: 250px;
+    filter: brightness(140%) drop-shadow(5px 5px 4px rgb(102, 102, 102));
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.left-result {
+    transform: scaleX(-1);
+    content: url('../images/rock-image.png');
+}
+
+.right-result{
+    content: url('../images/rock-image.png');
+}
+
+.Rock-image {
+    content: url('../images/rock-image.png') !important;
+}
+
+.Paper-image {
+    content: url('../images/paper-image.png') !important;
+}
+
+.Scissors-image {
+    content: url('../images/scissors-image.png') !important;
+}
+
+.hide {
+    display: none; 
+}
+
+hr {
+    width: 70%;
+    height: 6px;
+    border: none;
+    color: #C5FAD5;
+    background-color: #C5FAD5;
+}
+figcaption {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    text-shadow: 3px 3px #5a5a5a;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size:80px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-shadow: 4px 4px #5a5a5a;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #AA96DA;
+    color: #FFFFD2;
+}
+
+.alt-color {
+    color: #C5FAD5;
+}
+
+.score-system {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-top: 320px;
+    /* position: absolute; */
+}
+
+div#rock input{
+    background:url('../images/rock-image.png') no-repeat center;
+    background-size: cover;
+    filter: brightness(140%) drop-shadow(5px 5px 4px rgb(102, 102, 102));
+    width: 250px;
+    height: 250px;
+    border: none;
+    cursor: pointer;
+}
+
+div#paper input{
+    background:url('../images/paper-image.png') no-repeat center;
+    background-size: cover;
+    filter: brightness(140%) drop-shadow(5px 5px 4px rgb(102, 102, 102));
+    width: 250px;
+    height: 250px;
+    border: none;
+    cursor: pointer;
+}
+
+div#scissors input{
+    background:url('../images/scissors-image.png') no-repeat center;
+    background-size: cover;
+    filter: brightness(140%) drop-shadow(5px 5px 4px rgb(102, 102, 102));
+    width: 250px;
+    height: 250px;
+    border: none;
+    cursor: pointer;
+}
+
+.rps-button:hover {
+    animation: mover 0.25s infinite  alternate;
+}
+
+.score-tracker {
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    text-align: center;
+}
+
+.score-text {
+    margin-bottom: 10px;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
