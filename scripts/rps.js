@@ -13,13 +13,11 @@ var resultText = document.querySelector(`#result-text`);
 
 
 const buttons = document.querySelectorAll(`.rps-button`);
-console.log(buttons);
 
 buttons.forEach((button) =>
     button.addEventListener('click', () => {
         let playerChoice = capitalize(button.id); 
         let result = round(playerChoice, computerPlay());
-        console.log(result);
 
         playerScore += result[1];
         computerScore += result[2];
